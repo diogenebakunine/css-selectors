@@ -1,0 +1,129 @@
+body{
+    padding-bottom: 10rem;
+}
+
+
+.p1{
+    font-size: 30px;
+}
+#p2{
+    font-size: 25px;
+}
+
+/* CSS Grouping selectors */
+.title{
+    text-align: right;
+}
+.g-p{
+    text-align: right;
+}
+.g-a{
+    text-align: right;
+    display: block;
+}
+.title,.g-a,.g-p{
+    text-align: right;
+}
+
+/* Attribute selectors */
+
+a[target="_blank"]{
+    font-size: 25px;
+}
+h2[title="Show me something"]{
+    color: blue;
+}
+h2[title="another"]{
+    color: brown;
+}
+
+p[title~="selector"]{
+    font-size: 30px;
+}
+p[title|="selector"{
+    font-size: 40px;
+}
+
+p[title^="selector"]{
+    color: red;
+}
+
+p[class="google"]{
+    color: red;
+}
+
+p[title$="selector"]{
+    text-decoration: underline;
+}
+
+p[title*="elec"]{
+    text-align: right;
+}
+
+/* CSS Combinators */
+/* 1. Descendant Selector */
+.container p{
+    color: red;
+}
+/* 2. Child Selector (>) */
+.container > p {
+    color: red;
+}
+
+/* 3. Adjacent Sibling Selector (+)  */
+
+div + p{
+    color: bisque;
+}
+
+/* 4. General Sibling Selector */
+div ~ p{
+    color: darkmagenta;
+}
+
+.random{
+    background-color: blueviolet;
+    color: white;
+}
+
+.random:visited{
+    background-color: aqua;
+}
+
+.random:active{
+    color: darksalmon;
+}
+
+.hover{
+    font-size: 30px;
+    transition-duration: 1s;
+}
+
+.first{
+    width: 50%;
+}
+.first::first-line{
+    font-weight: 700;
+    color: blue;
+}
+
+p.first::first-letter{
+    color: blue;
+    font-size: 24px;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+.nav-list li{
+    display: inline-block ;
+}
+
+.nav-icon{
+    border: 1px solid blue;
+    color: lightblue;
+}
+
+ul.nav-icon li:hover .nav-icon{
+    color:red;
+}
