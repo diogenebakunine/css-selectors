@@ -40,7 +40,7 @@ h2[title="another"]{
 p[title~="selector"]{
     font-size: 30px;
 }
-p[title|="selector"{
+p[title|="selector"]{
     font-size: 40px;
 }
 
